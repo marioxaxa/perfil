@@ -1,38 +1,127 @@
+body {
+  background-color: hsl(270, 100%, 5%)
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: hsl(270, 42%, 32%);
+  height: 50vh;
+  width: 50vh;
   display: flex;
   flex-direction: column;
+  flex: 0 1 50vh;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: relative;
+  border: 1vh solid hsl(270, 42%, 15%);
+  border-radius: 5%;
+  box-shadow: 0px 5px 10px hsl(270, 100%, 65%);
+  top: 0;
+  transition: top ease 0.5s;
 }
 
-.App-link {
-  color: #61dafb;
+.Skills {
+  height: 70vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Skill-container{
+  width: 90%;
+  height: 90%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 1fr;
+  margin: 0 auto;
+  align-items: center;
+  justify-items: center;
 }
+
+.Skill-nome{
+  margin-top: 2vh;
+  color: hsl(270, 42%, 65%);
+  font-size: clamp(12px, calc(2px + 2vw), 50px);
+  font-family: 'Bitter', serif;
+}
+
+.Skill-box {
+  height: 23vh;
+  width: 18vh;
+}
+
+.Skill-box-top {
+  background-color: hsl(270, 42%, 65%);
+  height: 15vh;
+  width: 18vh;
+  border-radius: 5% 5% 0% 0%;
+  display: flex;
+  justify-content: center;
+}
+
+.Skill-box-img{
+  max-width: 100%;
+  display:block;
+  margin: 5%;
+}
+
+.Skill-box-bottom {
+  background-color: hsl(270, 42%, 85%);
+  height: 8vh;
+  width: 18vh;
+  border-radius: 0% 0% 30% 30%;
+  color: hsl(270, 42%, 15%);
+  font-size: clamp(8px, calc(0px + 3vmin), 50px);
+  font-family: 'Bitter', serif;
+  display: flex;
+  justify-content: center;
+  align-content: flex-end;
+}
+
+.App-header:hover {
+  top: -35px;
+}
+
+.Header-circle {
+  width: 25vh;
+  height: 25vh;
+  background-color: hsl(270, 42%, 65%);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.Header-mario-foto {
+  margin: 4%;
+  max-width: 92%;
+  max-height: 92%;
+  border-radius: 50%;
+}
+
+.Header-texto {
+  max-height: 70%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+
+}
+
+.Header-nome {
+  color: hsl(270, 42%, 65%);
+  font-size: clamp(20px, calc(4px + 8vmin), 40px);
+  font-family: 'Barlow Condensed', sans-serif;
+  height: 60%;
+}
+
+.Header-posicao {
+  color: hsl(270, 42%, 65%);
+  font-family: 'Bitter', serif;
+  font-size: clamp(5px, calc(5px + 2vmin), 30px);
+  height: 40%;
+}
+
