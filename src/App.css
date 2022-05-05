@@ -13,14 +13,13 @@ body {
 
 .App-header {
   background-color: hsl(270, 42%, 32%);
-  height: 50vh;
+  height: 60vh;
   width: 50vh;
   display: flex;
   flex-direction: column;
   flex: 0 1 50vh;
   align-items: center;
   justify-content: center;
-  position: relative;
   border: 1vh solid hsl(270, 42%, 15%);
   border-radius: 5%;
   box-shadow: 0px 5px 10px hsl(270, 100%, 65%);
@@ -46,7 +45,7 @@ body {
 .Skill-nome{
   margin-top: 2vh;
   color: hsl(270, 42%, 65%);
-  font-size: clamp(12px, calc(2px + 2vw), 50px);
+  font-size: clamp(12px, calc(2px + 3.3vmin), 50px);
   font-family: 'Bitter', serif;
 }
 
@@ -87,6 +86,15 @@ body {
   top: -35px;
 }
 
+.Profile {
+  max-width: 90%;
+  max-height: 90%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  justify-items: center;
+}
+
 .Header-circle {
   width: 25vh;
   height: 25vh;
@@ -100,14 +108,15 @@ body {
   max-width: 92%;
   max-height: 92%;
   border-radius: 50%;
+  grid-row: 1;
 }
 
 .Header-texto {
   max-height: 70%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: flex-start;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-row: 2;
 
 }
 
@@ -115,13 +124,36 @@ body {
   color: hsl(270, 42%, 65%);
   font-size: clamp(20px, calc(4px + 8vmin), 40px);
   font-family: 'Barlow Condensed', sans-serif;
-  height: 60%;
+  height: fit-content;
+  margin-block: 0;
 }
 
 .Header-posicao {
   color: hsl(270, 42%, 65%);
   font-family: 'Bitter', serif;
   font-size: clamp(5px, calc(5px + 2vmin), 30px);
-  height: 40%;
+  height: fit-content;
+  margin-block: 0;
 }
+
+.Header-contatos {
+  display: flex;
+  justify-content: center;
+  gap: 2vmin;
+  grid-row: 3;
+
+}
+
+.Header-contatos > a > svg {
+  fill: hsl(270, 42%, 65%);
+  width: 32;
+  height: 32;
+  color: hsl(270, 42%, 65%);
+  text-decoration: none;
+}
+
+.Header-contatos > a > svg:hover {
+  fill: hsl(270, 42%, 55%);
+}
+
 

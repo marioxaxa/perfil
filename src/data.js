@@ -1,40 +1,38 @@
-export const data = [
-    {
-      "Linguagens": {
-        "html": {
-            "title": "HTML",
+export const linguagens = [
+        {
+            "tittle": "HTML",
             "img": "../html-logo.png",
         },
-        "css": {
-            "title": "CSS",
-            "img": "../c-logo.png",
+        {
+            "tittle": "CSS",
+            "img": "../css-3-logo-1.png",
         },
-        "js": {
-            "title": "JS",
+        {
+            "tittle": "JS",
             "img": "../JavaScript-logo.png",
         },
-        "c": {
-            "title": "C",
+        {
+            "tittle": "C",
             "img": "../c-logo.png",
         }
-      },
-      "Conhecimentos": {
-        "react": {
-            "title": "React",
+    
+]
+
+export const conhecimentos = [
+        {
+            "tittle": "React",
             "img": "../react-logo.png",
         },
-        "bs": {
-            "title": "Bootstrap",
+        {
+            "tittle": "Bootstrap",
             "img": "../Bootstrap_logo.png",
         },
-        "blender": {
-            "title": "Blender",
+        {
+            "tittle": "Blender",
             "img": "../blender-logo.png",
         },
-        "ac": {
-            "title": "AutoCad",
+        {
+            "tittle": "AutoCad",
             "img": "../autocad-logo.png",
         }
-      }
-    }
 ]
