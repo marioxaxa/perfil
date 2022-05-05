@@ -1,44 +1,13 @@
 import './App.css';
+import {data} from './data.js'
+import Skillcontainer from './skillcontainer';
 
 function App() {
   return (
     <div className="App">
       <header className='App-header Skills'>
         <div className='Skill-nome'>Linguagens</div>
-        <div className='Skill-container'>
-          <div className='Skill-box'>
-            <div className='Skill-box-top'>
-              <img src='../html-logo.png' alt='HTML logo.' className='Skill-box-img'/>
-            </div>
-            <div className='Skill-box-bottom'>
-              <p>HTML</p>
-            </div>
-          </div>
-          <div className='Skill-box'>
-            <div className='Skill-box-top'>
-              <img src='../css-3-logo-1.png' alt='CSS logo.' className='Skill-box-img'/>
-            </div>
-            <div className='Skill-box-bottom'>
-              <p>CSS</p>
-            </div>
-          </div>
-          <div className='Skill-box'>
-            <div className='Skill-box-top'>
-              <img src='../JavaScript-logo.png' alt='JavaScript logo.' className='Skill-box-img'/>
-            </div>
-            <div className='Skill-box-bottom'>
-              <p>JS</p>
-            </div>
-          </div>
-          <div className='Skill-box'>
-          <div className='Skill-box-top'>
-            <img src='../c-logo.png' alt='C logo.' className='Skill-box-img'/>
-          </div>
-            <div className='Skill-box-bottom'>
-              <p>C</p>
-            </div>
-          </div>
-        </div>
+          <Skillcontainer />
       </header>
       <header className='App-header'>
         <span className='Profile'>
